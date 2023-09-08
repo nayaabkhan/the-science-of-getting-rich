@@ -132,7 +132,7 @@
 
 #set par(
     justify: true,
-    leading: 0.25em,
+    leading: 0.35em,
 )
 
 
