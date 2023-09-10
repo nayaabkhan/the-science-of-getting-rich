@@ -26,7 +26,7 @@
     margin: 2cm,
 )
 
-#set text(font: "HQGQAX+MrsEavesOT-Roman")
+#set text(font: "HQGQAX+MrsEavesOT-Roman", size: 12pt)
 
 // cover page
 #page(align(center + horizon)[
@@ -103,7 +103,7 @@
         let all = query(heading, loc)
         if all.any(it => it.location().page() == i) {
             return [
-                #set text(size: 0.8em, tracking: 1.5pt)
+                #set text(size: 0.7em, tracking: 1.5pt)
                 #h(1fr) #numeric(pagenumber)
             ]
         }
@@ -111,7 +111,7 @@
         // Are we on an odd page?
         if calc.odd(i) {
             return [
-                #set text(size: 0.8em, tracking: 1.5pt)
+                #set text(size: 0.7em, tracking: 1.5pt)
                 #smallcaps(title)
                 #h(1fr) #numeric(pagenumber)
             ]
@@ -121,7 +121,7 @@
         let before = query(selector(heading).before(loc), loc)
         if before != () {
             return [
-                #set text(size: 0.8em, tracking: 1.5pt)
+                #set text(size: 0.7em, tracking: 1.5pt)
                 #numeric(pagenumber)
                 #h(1fr) #smallcaps(before.last().body)
             ]
