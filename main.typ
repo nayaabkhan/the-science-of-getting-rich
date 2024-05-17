@@ -43,6 +43,10 @@
     #text(13pt, upper("Elizabeth Towne"))\
     #text(13pt, upper("Holyoke, MASS,"))\
     #text(8pt, numeric("1910"))
+    #v(3em, weak: true)
+    #line(length: 50%, stroke: (thickness: 0.5pt, dash: "loosely-dotted"))
+    #text(8pt, emph("Only for the team at"))
+    #image("innovace.svg", width: 50pt)
 ])
 
 #align(center + top, text(13pt, smallcaps[
